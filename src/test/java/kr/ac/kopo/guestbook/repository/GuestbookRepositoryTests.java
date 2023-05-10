@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
@@ -54,7 +55,7 @@ public class GuestbookRepositoryTests {
     @Test
     public void testQuerydsl1() {
 
-        Pageable pageable = (Pageable) PageRequest.of(0,10, Sort.by("gno").descending());
+        Pageable pageable = PageRequest.of(0,10, Sort.by("gno").descending());
 
         QGuestbook qGuestbook = QGuestbook.guestbook;
 
