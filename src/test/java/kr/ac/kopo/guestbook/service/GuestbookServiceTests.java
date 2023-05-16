@@ -40,4 +40,28 @@ public class GuestbookServiceTests {
 
     }
 
+    @Test
+    public void testList2(){
+
+        PageRequestDTO pageRequestDTO = PageRequestDTO.builder()
+                .page(1)
+                .size(10).build();
+
+
+        PageResultDTO<GuestbookDTO, Guestbook> resultDTO = service.getList(pageRequestDTO);
+
+        System.out.println("Prev : " + resultDTO.isPrev());
+        System.out.println("Next : " + resultDTO.isNext());
+        System.out.println("Total : " + resultDTO.getTotalPage());
+        System.out.println("----------------------------------------");
+
+        for (GuestbookDTO dto : resultDTO.getDtoList()) {
+            System.out.println(dto);
+        }
+
+        System.out.println("======================");
+
+        resultDTO.getPageList().forEach(page -> System.out.print(page + " "));
+    }
+
 }
