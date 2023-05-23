@@ -1960,6 +1960,12 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+/*사용자 정의*/
+.form-group {
+  margin: 15px 15px;
+}
+
 .form-label {
   margin-bottom: 0.5rem;
 }
@@ -2858,6 +2864,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
+  margin-left: 17px;
 }
 
 .btn-secondary {
