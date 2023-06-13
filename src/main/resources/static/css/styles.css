@@ -2094,6 +2094,8 @@ progress {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.25rem;
+/*  추가*/
+  margin-right: 10px;
 }
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
@@ -2550,6 +2552,10 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.5rem;
+}
+
+.input-group-sm{
+  margin-right: 10px;
 }
 
 .input-group-sm > .form-control,
