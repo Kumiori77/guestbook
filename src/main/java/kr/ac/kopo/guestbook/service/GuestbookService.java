@@ -1,5 +1,6 @@
 package kr.ac.kopo.guestbook.service;
 
+import com.querydsl.core.BooleanBuilder;
 import kr.ac.kopo.guestbook.dto.GuestbookDTO;
 import kr.ac.kopo.guestbook.dto.PageRequestDTO;
 import kr.ac.kopo.guestbook.dto.PageResultDTO;
@@ -40,4 +41,6 @@ public interface GuestbookService {
     void remove(Long gno);
 
     void modify(GuestbookDTO dto);
+
+    BooleanBuilder getSearch(PageRequestDTO requestDTO);
 }

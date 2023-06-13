@@ -67,7 +67,7 @@ public class GuestbookController {
     }
 
     @PostMapping("/modify")
-    public String moify(GuestbookDTO dto, @ModelAttribute("requestDto") PageRequestDTO requestDTO,
+    public String modify(GuestbookDTO dto, @ModelAttribute("requestDto") PageRequestDTO requestDTO,
         RedirectAttributes redirectAttributes) {
 
         log.info("post modify................");
